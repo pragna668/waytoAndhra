@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            background-image: url("back2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: Row; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center the items */
+            margin: 20px 0; /* Adds space above and below */
+        }
+        .my-image {
+            width: 290px;
+            height: 200px;
+        }
+        .box {
+            width: 370px;
+            margin: 10px; /* Space between boxes */
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+            text-align: center; /* Center content */
+        }
+        .fixed-width {
+            width: 280px;
+            background-color: black;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .fixed-width:hover {
+            background-color: #0056b3; /* Darker color on hover */
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* Glowing effect */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="searchFunction()">Search</button>
+        </div>
+    </header>
+
+    <!-- First Row of Buttons -->
+    <div class="container">
+        <div class="box">
+            <a href="knl.html">
+                <img src="knl.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">Kurnool</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="kdp.html">
+                <img src="kdp1.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">Kadapa</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="ctr.html">
+                <img src="ctr.jpg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">Chittor</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="nllr.html">
+                <img src="nllr.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">Nellore</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="antp.html">
+                <img src="antp.jpg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">Anantapur</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Second Row of Buttons -->
+    <div class="container">
+        <div class="box">
+            <a href="new1.html">
+                <img src="new1.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">New Location 1</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="new2.html">
+                <img src="new2.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">New Location 2</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="new3.html">
+                <img src="new3.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">New Location 3</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="new4.html">
+                <img src="new4.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">New Location 4</button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="new5.html">
+                <img src="new5.jpeg" class="my-image">
+                <button type="button" onclick="myfun()" class="fixed-width">New Location 5</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

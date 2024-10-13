@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body
+    {
+       background-image: url("inkri.jpg");
+       background-repeat=no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+    }
+        
+        /*Basic reset*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*Gallery container*/
+    
+    .gallery 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        width: 300px;
+    }
+    /*Photo container*/
+    
+    .photo 
+    {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .photoimg
+    {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+    }
+    /*Hover effect*/
+    
+    .photo:hover img 
+    {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+    }
+    .photo::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .photo:hover::before
+    {
+        opacity: 1;
+    }
+    .my-image 
+    {
+    width: 300px;
+    height: 200px;
+    }
+   .fixed-width 
+   {
+    width: 280px;
+    background-color: black;
+   /*background-color: #007bff;*/ /* Button color */
+    border: none;
+    color: #fff;
+    padding: 15px 40px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    /*transition: background-color 0.3s ease, box-shadow 0.3s ease;*/
+    
+   }
+   .fixed-width:hover
+   {
+   background-color: #0056b3; /* Darker color on hover */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* Glowing effect */
+   }
+ 
+</style>    
+</head>
+<body>
+    <div class="gallery">
+        <div class="photo">
+            <a href="https://www.justdial.com/Krishna/Restaurants/nct-10408936?trkid=277-remotecity-fcat&term=">
+            <img src="knr.jpeg" alt="photo1" class="my-image">
+            <button type="button"class="fixed-width">Restaurants</button></a>
+            </a>
+        </div>
+        <div class="photo">
+            <a href="https://www.justdial.com/Krishna/Hotels/nct-10255012?trkid=174-remotecity-fcat&term=">
+            <img src="residency.jpg"  alt="photo2" class="my-image">
+            <button type="button" class="fixed-width">Residency</button></a>
+            </a>
+        </div>
+        <div class="photo">
+            <a href="https://www.justdial.com/Krishna/Hospitals/nct-10253670?trkid=173-remotecity-fcat&term=">
+            <img src="hospital.jpg" alt="photo3" class="my-image">
+            <button type="button" class="fixed-width">Hospital</button></a>
+            </a>
+        </div>
+        <div class="photo">
+            <a href="https://www.justdial.com/Krishna/Shopping-Malls/nct-10310530?trkid=42674-remotecity-fcat&term=">
+            <img src="mall.jpg" alt="photo3" class="my-image">
+            <button type="button" class="fixed-width">Mall</button></a>
+            </a>
+        </div>
+        <div class="photo">
+            <a href="https://www.justdial.com/Krishna/Tourist-Attraction/nct-10596038?trkid=7101-remotecity-fcat&term=Tourist%20Attraction">
+            <img src="tourist.jpeg"  alt="photo3" class="my-image">
+            <button type="button" class="fixed-width">Tourist places</button></a>
+            </a>
+        </div>
+     </div>
+     </body>
+<script src="script.js"></script>
+</html>

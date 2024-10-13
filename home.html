@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;40')
+*
+ {
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+   font-family: 'Roboto',sans-serif;
+ }
+        .wrapper{ width:100%;}
+        .wrapper .container{ padding-top: 10px;}
+        .wrapper .container .hero
+        {
+                width:80%;
+                margin:0px auto;
+                padding-top: 50px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+       }
+       .wrapper .container .hero .gallery
+       {
+        width: 100%;
+        position: relative;
+       }
+       .wrapper .container .hero .gallery .image
+       {
+        width: 100%;
+       }
+       .wrapper .container .hero .gallery .image img
+       {
+         
+          width: 370px;
+          height: 200px;
+       }
+       body
+{
+  background-image: url("back2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+div.ex
+{
+  width: 320px;
+  height: 15px;
+  padding: 10px;
+  border: 5px solid violet;
+  margin: 0;
+  position:absolute;
+  left:10px;
+  right:70px;
+  top:75px;
+  text-align:center;
+  font-size:25px;
+}
+.my-image 
+{
+    width: 290px;
+    height: 200px;
+ }
+ .fixed-width 
+{
+    width: 280px;
+    background-color: black;
+     border: none;
+    color: #fff;
+    padding: 15px 40px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;0
+    z-index: 0;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    
+}
+.fixed-width:hover
+{
+   background-color: #0056b3; /* Darker color on hover */
+   box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* Glowing effect */
+}
+.box
+{
+      width:370px;
+      margin:0 10px;
+      box-shadow:0 0 20px 2px rgba(0,0,0,.1);
+}
+.boximg
+{
+     display: block;
+     width: 100%;
+     border-radius: 5px;
+}
+.box:hover
+{
+     transform:scale(1.2);
+     z-index: 2;
+}
+       
+</style>
+</head>
+<body>
+ /*<header class="header">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
+ </header></br></br>*/
+<div class="wrapper">
+   <div class="container">
+      <div class="hero">
+       <div class="box">
+       <div class="gallery">
+        <div class="image">
+           <a href="knl.html">
+               <img src="knl.jpeg"  class="my-image">
+                <button type="button" onclick="myfun()"  class="fixed-width">Kurnool</button></a>
+       </div>
+   </div>
+   </div>
+   <div class="box">
+      <div class="gallery">
+          <div class="image">
+              <a href="kdp.html">
+                  <img src="kdp1.jpeg"  class="my-image">
+                  <button type="button" onclick="myfun()"class="fixed-width">Kadapa</button></a>
+  
+            </div>
+      </div>
+   </div>
+<div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="ctr.html">
+            <img src="ctr.jpg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">Chittor</button></a>
+      </div>
+   </div>
+</div>
+<div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="nllr.html">
+             <img src="nllr.jpeg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">Nellore</button></a>
+      </div>
+   </div>
+</div>
+<div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="antp.html">
+            <img src="antp.jpg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">Anantapur</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="sri.html">
+             <img src="srikakulam.jpeg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">srikakulam</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="vish.html">
+            <img src="vish.jpg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">vishakapatnam</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="vij.html">
+          <img src="vij.jpeg"  class="my-image">
+            <button type="button" onclick="myfun()"class="fixed-width">vijayanagaram</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="east.html">
+           <img src="east.jpg"  class="my-image">
+            <button type="button" onclick="myfun()"class="fixed-width">East Godavari</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="west.html">
+            <img src="west.jpeg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">West Godavari</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="prak.html">
+            <img src="prak.jpg"  class="my-image">
+               <button type="button" onclick="myfun()"class="fixed-width">Prakasam</button></a>
+      </div>
+   </div>
+</div>
+ <div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="gun.html">
+            <img src="guntur.jpg"  class="my-image">
+            <button type="button" onclick="myfun()"class="fixed-width">Guntur</button></a>
+      </div>
+   </div>
+</div>
+<div class="box">
+   <div class="gallery">
+      <div class="image">
+         <a href="kri.html">
+            <img src="kri.jpg"  class="my-image">
+            <button type="button" onclick="myfun()"class="fixed-width">Krishna</button></a>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
